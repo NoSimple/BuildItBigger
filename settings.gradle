@@ -1,1 +1,3 @@
 include ':app', ':backend'
+include ':jokesmodule'
+include ':jokeslibrary'
