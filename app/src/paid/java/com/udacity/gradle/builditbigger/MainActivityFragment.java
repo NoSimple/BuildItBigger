@@ -11,17 +11,13 @@ import android.widget.ProgressBar;
 import androidx.fragment.app.Fragment;
 
 import com.example.jokeslibrary.JokeActivity;
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.Objects;
 
 /**
  * A placeholder fragment containing a simple view.
  */
-public class MainActivityFragment extends Fragment implements OnJokeListener {
+public final class MainActivityFragment extends Fragment implements OnJokeListener {
 
     private View rootView;
     private Button tellButton;
@@ -35,7 +31,6 @@ public class MainActivityFragment extends Fragment implements OnJokeListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         rootView = inflater.inflate(R.layout.fragment_main, container, false);
-        adView = rootView.findViewById(R.id.ad_view);
 
         tellProgress = rootView.findViewById(R.id.progress_tell);
         tellButton = rootView.findViewById(R.id.btn_tell);

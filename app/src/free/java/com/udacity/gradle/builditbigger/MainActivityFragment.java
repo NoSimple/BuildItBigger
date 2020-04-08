@@ -21,7 +21,7 @@ import java.util.Objects;
 /**
  * A placeholder fragment containing a simple view.
  */
-public class MainActivityFragment extends Fragment implements OnJokeListener {
+public final class MainActivityFragment extends Fragment implements OnJokeListener {
 
     private View rootView;
     private Button tellButton;
